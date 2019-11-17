@@ -14,4 +14,15 @@ router.get("/",(req,res)=>{
   });
 });
 
+router.get("/guest",(req,res)=>{
+  res.send({
+    "title":"Hello guest"
+  });
+});
+
+//Sign Up
+router.post("/users", async(req, res) => {
+  // TODO: The sign up body
+});
+
 module.exports = router;
